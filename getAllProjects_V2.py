@@ -9,11 +9,11 @@ import requests
 def func1():
 
   repo_result = []
-  Token_list = ['**','**']
+  Token_list = ['**']
   i = 0  
   api_url = 'https://api.github.com/'
 
-  while i < 100: # This number will be increased to collect all the projects
+  while i < 10000: # This number will be increased to collect all the projects
 
     repo_url = api_url + 'repositories?since=' + str(i)  
     exception_count = 0  
@@ -187,11 +187,11 @@ def func1():
 def func2():
 
   repo_result = []
-  Token_list = ['**','**']
-  i = 200  
+  Token_list = ['**']
+  i = 10000  
   api_url = 'https://api.github.com/'
 
-  while i < 300: # This number will be increased to collect all the projects
+  while i < 20000: # This number will be increased to collect all the projects
 
     repo_url = api_url + 'repositories?since=' + str(i)  
     exception_count = 0  
@@ -365,11 +365,11 @@ def func2():
 
 def func3():
   repo_result = []
-  Token_list = ['**','**']
-  i = 300  
+  Token_list = ['**']
+  i = 20000  
   api_url = 'https://api.github.com/'
 
-  while i < 400: # This number will be increased to collect all the projects
+  while i < 30000: # This number will be increased to collect all the projects
 
     repo_url = api_url + 'repositories?since=' + str(i)  
     exception_count = 0  
@@ -544,11 +544,11 @@ def func3():
 def func4():
 
   repo_result = []
-  Token_list = ['**','**']
-  i = 400  
+  Token_list = ['**']
+  i = 30000  
   api_url = 'https://api.github.com/'
 
-  while i < 600: # This number will be increased to collect all the projects
+  while i < 40000: # This number will be increased to collect all the projects
 
     repo_url = api_url + 'repositories?since=' + str(i)  
     exception_count = 0  
