@@ -2,11 +2,12 @@ import json,csv
 
 combined_list = []
 
-for i in range(1,5):
-	with open('repo_file' + str(i) + '.json') as json_file:
-	   	data = json.load(json_file)
-	   	print(len(data))	   	
-	   	combined_list = combined_list + data
+for filename in os.listdir(os.getcwd()):
+	if filename.endswith('.json'):
+		with open(os.path.join(os.getcwd(), filename)) as json_file:
+			data = json.load(json_file)
+			print(len(data))
+			combined_list = combined_list + data
 
 print(len(combined_list))
 
